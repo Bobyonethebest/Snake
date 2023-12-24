@@ -1,2 +1,2 @@
 # This is my Pyhon Snake Game
-Borys
+Borys Super Devloper
