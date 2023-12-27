@@ -5,7 +5,7 @@ n,apple = step, 99
 screen_fill = pg.display.set_mode([225] * 2, pg.SCALED).fill
 
 while segments.count(head) % 2 * head % n * (head & 240):
-    if e == pg.event.get(768):
+    if e := pg.event.get(768):
         step = (e[0].key % 4 * 17 + 15) % 49 - n
     segments = segments[apple != head:] + [head + step]
 
