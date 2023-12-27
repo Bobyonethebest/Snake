@@ -4,7 +4,7 @@ y, step, head= segments = [15, 16, 17]
 n,apple = step, 99
 screen_fill = pg.display.set_mode([225] * 2, pg.SCALED).fill
 speed=150
-score=0
+score=0  
 
 while segments.count(head) % 2 * head % n * (head & 240):
     if e := pg.event.get(768):
@@ -27,6 +27,6 @@ print(f"Final score is {score}!")
 if score<10:
     print("Loser 👎")
 elif score>20:
-    print("you are a pro 👑")
+    print("You are a PRO 👑")
 else:
-    print("keep practicing")
+    print("Keep practicing")
